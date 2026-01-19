@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SigrController;
 
-Route::get('/', function () {
-    return view('sig_a.inscription');
-});
+Route::get('/', [SigrController::class, 'index']);

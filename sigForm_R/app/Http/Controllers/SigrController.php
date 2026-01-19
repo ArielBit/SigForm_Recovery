@@ -12,7 +12,7 @@ class SigrController extends Controller
      */
     public function index()
     {
-        //
+        return view('sig_a.inscription');
     }
 
     /**
