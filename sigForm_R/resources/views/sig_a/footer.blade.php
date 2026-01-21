@@ -45,5 +45,5 @@
 </article>
 
 <hr>
-<p>Copyright <em>FlexStart</em>. Tout droits réservés.</p>
+<p>©Copyright <em>FlexStart</em>. Tout droits réservés.</p>
 <p>Designé par <a href="">ArielBit😎</a></p>
