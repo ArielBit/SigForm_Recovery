@@ -28,7 +28,7 @@ class SigrController extends Controller
     }
 
     public function form1(){
-        return view('confirm');
+        return view('sig_a.confirm');
     }
 
     /**
