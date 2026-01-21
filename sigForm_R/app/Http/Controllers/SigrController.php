@@ -15,6 +15,22 @@ class SigrController extends Controller
         return view('sig_a.inscription');
     }
 
+    public function form1(Request $request)
+    {
+        $validated = $request->validate([
+          'ok' => 'required|string',
+          'moi' => 'requiered|string',                              
+        ]);
+
+        Article::create($validated);
+
+        return redirect()->route('confirm1');
+    }
+
+    public function form1(){
+        return view('confirm');
+    }
+
     /**
      * Show the form for creating a new resource.
      */
