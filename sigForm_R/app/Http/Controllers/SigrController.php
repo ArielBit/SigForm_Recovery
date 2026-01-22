@@ -22,7 +22,7 @@ class SigrController extends Controller
           'moi' => 'requiered|string',                              
         ]);
 
-        Article::create($validated);
+        Sigr::create($validated);
 
         return redirect()->route('confirm1');
     }
@@ -74,8 +74,9 @@ class SigrController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Sigr $sigr)
+    public function destroy($id)
     {
-        //
+        Sigr::findOrFail($id)->delete();
+        return redirect->route('confirm1');
     }
 }
