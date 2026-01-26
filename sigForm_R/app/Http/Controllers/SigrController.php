@@ -30,6 +30,11 @@ class SigrController extends Controller
     public function form1(){
         return view('sig_a.confirm');
     }
+    
+    public function showform1(){
+        $sigr = Sigr::all();
+        return view('show.form1', compact('sigr');
+    }
 
     /**
      * Show the form for creating a new resource.
