@@ -1,0 +1,45 @@
+
+h3{
+    text-align: center;
+}
+
+form{
+    width: 50%;
+    margin: auto;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    box-shadow: rgb(16, 18, 148) 10px 10px 10px;
+    display:grid;
+}
+
+body.dark-theme {
+    background: #181a1b;
+    color: #f1f1f1;
+}
+
+body.dark-theme form {
+    background-color: #23272b;
+    border-color: #444;
+    box-shadow: #222 10px 10px 10px;
+}
+
+body.dark-theme label,
+body.dark-theme h3 {
+    color: #f1f1f1;
+}
+
+body.dark-theme input,
+body.dark-theme select {
+    background: #222;
+    color: #f1f1f1;
+    border: 1px solid #555;
+}
+
+body.dark-theme button[type="submit"] {
+    background: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
